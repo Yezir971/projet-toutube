@@ -3,3 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }   
+
+:root{
+    --backgroundColor: #FEFCFF ; 
+    --colorButton1: #009963;
+    --colorButton2: #F5F0E5;
+    --colorTexte: #A1824A;
+}
+
+body{
+    background: var(--backgroundColor) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+p, a{
+    color: var(--colorTexte);
+}
+h1{
+    
+}
+.logo{
+    width: 50%;
+    border-radius: 100%;
+    border: solid 1px rgb(220, 215, 215);
+    margin-bottom: 30px;
+}
+
+main figure, main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.banniere{
+    width: 100%;
+}
+
+main{
+    padding: 30px 0 60px 0;
+
+}
+
+iframe{
+    width: 100%;
+}
