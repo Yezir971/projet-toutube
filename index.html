@@ -6,59 +6,99 @@
     <title>Projet youtube</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+
+    <!-- favIcon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favIcon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favIcon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favIcon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favIcon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favIcon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favIcon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favIcon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favIcon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favIcon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favIcon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favIcon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favIcon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favIcon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favIcon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- fin de la favIcon  -->
 </head>
 <body>
     <h1>Les Sex’plorateurs</h1>
     <img class="logo" src="assets/img/bann.svg" alt="">
-    <!-- <div class="headerBann">
-        <div class="contanerBanniere">
-            <div class="banniere"></div>
-        </div>
-    </div> -->
+
     <img class="logoYoutube" src="assets/img/logo-youtube.svg" alt="logo youtube ">
     <main>
-        <!-- <figure>
-            <img class="logo" src="assets/img/logo_chaine.webp" alt="logo chaîne">
-            <figcaption>Sex’plorons</figcaption>
-        </figure> -->
-
-        <div class="cardCotainer" >
+        <div class="cardCotainer" data-aos="zoom-in" >
             <div class="descriptions">
                 <h2>Description</h2>
-                <p class="dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusamus eveniet aspernatur dolores placeat incidunt fugiat cupiditate quod modi molestiae dignissimos mollitia nulla, libero quo possimus, nisi corporis adipisci voluptate?</p>
+                <p class="dark"><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusamus eveniet aspernatur dolores placeat incidunt fugiat cupiditate quod modi molestiae dignissimos mollitia nulla, libero quo possimus, nisi corporis adipisci voluptate?</em></p>
             </div> 
             <div class="photo">
                 <img src="./assets/img/cv-img-W.jpg" alt="">
             </div>
+            <div class="buttonChaine" id="contacterButton">
+                <a href="index.html#contacter" >Nous contacter</a>        
+            </div>
         </div>
     </main>
-        
-
-
-    <div id="buttonChaine">
-        <a href="#">Voir la chaîne</a>        
-    </div>
-    <iframe src="https://www.youtube.com/embed/57wom9GVodI?si=dNp__cRZb6g3VLlS" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <section>
+        <h2>Nos shorts :</h2>
     
-    <p>Le formulaire </p>
-    <form action="#" class="form_main">
+        <div class="VideosShorts">
+            <iframe width="300" height="500"  src="https://www.youtube.com/embed/bLSHO-j4YvA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="300" height="500"  src="https://www.youtube.com/embed/bLSHO-j4YvA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="idSectionNosVideos">
+        <div class="conatainerStar">
+            <div class="circle">
+                <div class="orbite"></div>
+                <div class="text">
+                    <p><span>⭐</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <span></span>
+            <!-- <div class="lineGauche"></div> -->
+
+
+            <h2>Nos vidéos</h2>
+            
+            <!-- <div class="lineGauche"></div> -->
+        </div>
+
+        
+        <div class="buttonChaine">
+            <a href="https://www.youtube.com/@Sexplorateur" target="_blank">Voir la chaîne</a>        
+        </div>
+    
+    
+        <iframe width="320"  src="https://www.youtube.com/embed/bLSHO-j4YvA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+    
+    <form id="contacter" action="#" class="form_main">
         <p class="heading">Nous contacter</p>
         <div class="inputContainer">
-            <svg class="inputIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2e2e2e" viewBox="0 0 16 16">
-                <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"></path>
-            </svg>
+
             <input type="text" class="inputField" id="username" placeholder="Votre nom">
         </div>
         
         <div class="inputContainer">
             <svg class="inputIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2e2e2e" viewBox="0 0 16 16">
-            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
+                <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"></path>
             </svg>
             <input type="email" class="inputField" id="password" placeholder="Votre email">
-        </div>
-                  
-               
+        </div>  
         <button id="button">Submit</button>
     </form>
     
@@ -77,6 +117,7 @@
 
         <p>© 2024 Copyright</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

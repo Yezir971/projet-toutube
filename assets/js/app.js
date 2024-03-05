@@ -1,9 +1,7 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', ()=>{
-    console.log('salut');
-    // function mode(){
+    AOS.init();
 
-    // }
 
 })
