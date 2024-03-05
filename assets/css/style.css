@@ -17,17 +17,17 @@ body{
 
     display: grid;
 
+
 }
 
 p{
     color: var(--colorTexte);
 }
 h1{
-    padding: 20px 0;
-    margin: auto;
-
+    visibility: hidden;
+    display: none;
 }
-/* git  */
+
 .logo{
     width: 90%;
     margin: auto;
@@ -223,3 +223,37 @@ i{
   
 /* fin du formulaire   */
 
+.cardCotainer{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr) ;
+    grid-template-rows: repeat(25, 1fr) ;
+    border: solid 1px red;
+    width: 320px;
+    margin: auto;
+}
+.photo,.descriptions{
+    border-radius: 10%;
+}
+.descriptions{
+    background: grey;
+    grid-row: 3 / 23;
+    grid-column: 12 / 2;
+}
+.photo{
+    grid-row: 1 / 7;
+    grid-column: 9 / 13;
+}
+.photo img{
+    border-radius: 10%;
+    width: 100px;
+}
+.descriptions h2{
+    margin: 40px 0 40px 20px;   
+}
+.descriptions p{
+    margin: 0 20px;
+}
+
+.dark{
+    color:black;
+}

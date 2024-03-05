@@ -2,4 +2,8 @@
 
 document.addEventListener('DOMContentLoaded', ()=>{
     console.log('salut');
+    // function mode(){
+
+    // }
+
 })
