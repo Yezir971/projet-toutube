@@ -72,6 +72,18 @@ document.addEventListener('DOMContentLoaded', ()=>{
       hideShowArrows(slides, prevButton, nextButton, targetIndex);
     });
 
+    // button switch Nour 
+    var swit = document.getElementById('lightSwitch');
+    var container = document.getElementById('container');
+    swit.onclick = function(){
+        var color = container.style.backgroundColor;
+        if(color === 'var(--colorButton2)'){
+            container.style.backgroundColor = 'var(--backgroundColor)';
+        }else{
+            container.style.backgroundColor = 'var(--colorButton2)';
+        }
+    };
+
 
 
 })
