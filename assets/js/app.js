@@ -9,16 +9,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let menu = document.getElementById('menu');
     let croix1 = document.getElementById('barre1');
     let croix2 = document.getElementById('barre2');
-
-
-
-    // variable page accueil
-    let sectionPortfolio = document.querySelector(".sectionPortfolio"); 
-
-
+    let listeMenu = document.querySelectorAll('.listeMenu')
 
     // constante qui va nous permettre de modifier notre css de facon dynamique pour gérer l'ajout d'élément dans notre portfolio 
-
 
     btnMenu.onclick = function(){/*on récupère les éléments enfants du conteneur hamburger pour réaliser l'animations en css grâce à l'id croix*/
         menu.classList.toggle('hide');
@@ -27,6 +20,20 @@ document.addEventListener('DOMContentLoaded', ()=>{
         croix1.classList.toggle('angleBarre1');
         croix2.classList.toggle('angleBarre2');
     }
+    for(let i=0; i<listeMenu.length ; i++){
+        listeMenu[i].addEventListener('click', ()=>{
+            menu.classList.toggle('hide');
+            croix1.classList.toggle('croix');
+            croix2.classList.toggle('croix');
+            croix1.classList.toggle('angleBarre1');
+            croix2.classList.toggle('angleBarre2');
+    
+    
+        })
+    }
+
+
+
 
     // fin du js menuHamburger
 

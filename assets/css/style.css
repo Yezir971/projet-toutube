@@ -76,6 +76,7 @@ h2{
     margin: 80px 0;
 }
 
+
 /* Style du menu hamburger */
 
 .off{
@@ -89,19 +90,23 @@ li{
 }
 .hide{
     display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: space-around ;
     position: fixed;
     padding-top: 25px;
     right: 0;
     top: 0px;
     height: 100vh;
+    width: 100vw;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.35);
+    /* background: rgba(255, 255, 255, 0.35); */
     /* début glassmorphism */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.6px);
     -webkit-backdrop-filter: blur(7.6px);
     /* fin glassmorphism */
-    transform: translateX(50%);/* On indique ici que notre menu va translater de la droite vers la gauche, d'une distance équivalante à 50% de l'écran*/
+    transform: translateY(-20%);/* On indique ici que notre menu va translater de la droite vers la gauche, d'une distance équivalante à 50% de l'écran*/
     animation: apparition .6s ease-in-out forwards;/*On utilise animation pour créer une animation que l'on nomme apparition, le temps de l'animation va durer 0.6s, être rapide au début et lent à la fin*/
     /*forwards sert à faire en sorte que à la fin de l'animation le menu hamburger reste fixe*/
     opacity: 0;/* Opacity 0 pour que notre éléments soit invisible au début puis apparaît progressivement grâce au keyframes*/
@@ -123,9 +128,17 @@ li{
     border-radius: 10px;
 }
 .menuHamburger div{
-    border: solid var(--colorTexte) 1px;
+    border: solid var(--colorButton1) 1px;
     width: 70%;
     margin: 31% 15% 0;
+}
+#menu li {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#menu li a{
+    color: var(--colorButton1);
+    font-family: "Holtwood One SC", serif;
 }
 
 /*On donne une position finale aux 2 barres du menu hamburger */
@@ -232,187 +245,186 @@ i{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .contact-links h2{
+}
+.contact-links h2{
     margin: 0;
     color: var(--backgroundColorCard);
-  }
-  
-  .contact-box {
+}
+.contact-box {
     width: clamp(100px, 90%, 1000px);
-    margin: 80px 50px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .contact-links, .contact-form-wrapper {
+}
+
+.contact-links, .contact-form-wrapper {
     width: 50%;
     padding: 8% 5% 10% 5%;
-  }
-  
-  
-  .contact-links {
+}
+
+
+.contact-links {
     background-color: #1f2e43;
     background:
-      radial-gradient(
+        radial-gradient(
         circle at 55% 92%, #426691 0 12%, transparent 12.2%
-      ), 
-      radial-gradient(
+        ), 
+        radial-gradient(
         circle at 94% 72%, #426691 0 10%, transparent 10.2%
-      ), 
-      radial-gradient(
+        ), 
+        radial-gradient(
         circle at 20% max(78%, 350px), #263a53 0 7%, transparent 7.2%
-      ), 
-      radial-gradient(
+        ), 
+        radial-gradient(
         circle at 0% 0%, #263a53 0 40%, transparent 40.2%
-      ), 
-      #1f2e43;
+        ), 
+        #1f2e43;
     border-radius: 10px 0 0 10px;
-  }
-  
-  .contact-form-wrapper {
+}
+
+.contact-form-wrapper {
     border-radius: 0 10px 10px 0;
     background: rgba(219, 206, 225, 0.42);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.3px);
     -webkit-backdrop-filter: blur(5.3px);
     border: 1px solid rgba(219, 206, 225, 0.44);
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-links, .contact-form-wrapper {
+    width: 100%;
   }
   
-  @media only screen and (max-width: 800px) {
-    .contact-links, .contact-form-wrapper {
-      width: 100%;
-    }
-    
-    .contact-links {
-      border-radius: 10px 10px 0 0;
-    }
-    
-    .contact-form-wrapper {
-      border-radius: 0 0 10px 10px;
-    }
+  .contact-links {
+    border-radius: 10px 10px 0 0;
   }
   
-  @media only screen and (max-width: 400px) {
-    .contact-box {
-      width: 95%;
-      margin: 8% 5%;
-    }
+  .contact-form-wrapper {
+    border-radius: 0 0 10px 10px;
   }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact-box {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.link {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.imgContact {
+  width: 45px;
+  height: 45px;
+  filter: 
+    hue-rotate(220deg)
+    drop-shadow(2px 4px 4px #0006);
+  transition: 0.2s;
+  user-select: none;
+}
+
+.imgContact:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.imgContact:active {
+  transform: scale(1.1, 1.1);
+  filter: 
+    hue-rotate(220deg)
+    drop-shadow(2px 4px 4px #222)
+    sepia(0.3);
+}
+
+.form-item {
+  position: relative;
+}
+
+label, input, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 2%;
+  color: #999;
+  font-size: clamp(14px, 1.5vw, 18px);
+  pointer-events: none;
+  user-select: none;
+}
+
+input, textarea {
+  width: 100%;
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: clamp(15px, 1.5vw, 18px);
+}
   
+input:focus+label, 
+input:valid+label, 
+textarea:focus+label, 
+textarea:valid+label {
+  font-size: clamp(13px, 1.3vw, 16px);
+  color: #777;
+  top: -20px;
+  transition: all .225s ease;
+}
+
+.submit-btn {
+  background-color: var(--colorButton1);
+  filter: drop-shadow(2px 2px 3px #0003);
+  color: #fff;
+  font-family: "Poppins",sans-serif;
+  font-size: clamp(16px, 1.6vw, 18px);
+  display: block;
+  padding: 12px 20px;
+  margin: 2px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.submit-btn:active {
+  transform: scale(1.1, 1.1);
+  filter: sepia(0.5);
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
   
   .links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 50px;
-  }
-  
-  .link {
-    margin: 10px;
-    cursor: pointer;
+    padding-top: 30px;
   }
   
   .imgContact {
-    width: 45px;
-    height: 45px;
-    filter: 
-      hue-rotate(220deg)
-      drop-shadow(2px 4px 4px #0006);
-    transition: 0.2s;
-    user-select: none;
+    width: 38px;
+    height: 38px;
   }
+}
   
-  .imgContact:hover {
-    transform: scale(1.1, 1.1);
-  }
-  
-  .imgContact:active {
-    transform: scale(1.1, 1.1);
-    filter: 
-      hue-rotate(220deg)
-      drop-shadow(2px 4px 4px #222)
-      sepia(0.3);
-  }
-  
-  .form-item {
-    position: relative;
-  }
-  
-  label, input, textarea {
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  label {
-    position: absolute;
-    top: 10px;
-    left: 2%;
-    color: #999;
-    font-size: clamp(14px, 1.5vw, 18px);
-    pointer-events: none;
-    user-select: none;
-  }
-  
-  input, textarea {
-    width: 100%;
-    outline: 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    padding: 12px;
-    font-size: clamp(15px, 1.5vw, 18px);
-  }
-  
-  input:focus+label, 
-  input:valid+label, 
-  textarea:focus+label, 
-  textarea:valid+label {
-    font-size: clamp(13px, 1.3vw, 16px);
-    color: #777;
-    top: -20px;
-    transition: all .225s ease;
-  }
-  
-  .submit-btn {
-    background-color: var(--colorButton1);
-    filter: drop-shadow(2px 2px 3px #0003);
-    color: #fff;
-    font-family: "Poppins",sans-serif;
-    font-size: clamp(16px, 1.6vw, 18px);
-    display: block;
-    padding: 12px 20px;
-    margin: 2px auto;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    user-select: none;
-    transition: 0.2s;
-  }
-  
-  .submit-btn:hover {
-    transform: scale(1.1, 1.1);
-  }
-  
-  .submit-btn:active {
-    transform: scale(1.1, 1.1);
-    filter: sepia(0.5);
-  }
-  
-
-  
-  @media only screen and (max-width: 400px) {
-
-    
-    .links {
-      padding-top: 30px;
-    }
-    
-    .imgContact {
-      width: 38px;
-      height: 38px;
-    }
-  }
   
 /* fin du formulaire   */
 
@@ -672,6 +684,13 @@ section{
         width: 560px;
         height: 315px;
     }
+    #menu li a{
+        font-size: 2rem;
+    }
+    .line{
+        width: 32%;
+    }
+
     
 }
 
