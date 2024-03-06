@@ -573,4 +573,20 @@ section{
     width: 22%;
 }
 
+@media screen and (min-width:1024px){
+    main{
+        grid-template-rows: 1fr ;
+        grid-template-columns: 1fr 1fr ;
+    }
+    main .carousel{
+        margin-top: 64px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    main .cardCotainer{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+}
 
