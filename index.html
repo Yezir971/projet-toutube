@@ -36,13 +36,36 @@
     <!-- fin de la partie google font  -->
 </head>
 <body>
-    <div id="container">
+    <nav class="navPrincipal" role="navigation" aria-label="menu principal">
+        <!-- <div id="container">
         
-        <label class="switch">
-            <input id="lightSwitch" type="checkbox" class="input__check">
-            <span class="slider"></span>
-        </label>
-    </div>
+            <label class="switch">
+                <input id="lightSwitch" type="checkbox" class="input__check">
+                <span class="slider"></span>
+            </label>
+        </div> -->
+        <div class="containerNav">
+            <div class="menuHamburger">        
+                <div id="barre1"></div>
+                <div id="barre2"></div>
+            </div>
+            <ul role="menu" class="off" id="menu">
+                <li class="deroulant">
+                    <a role="menuitem" href="/phoenix/index.php" aria-label="Aller sur la page Accueil">Accueil</a>
+                    <ul class="sous">
+                        <li><a role="menuitem" href="/phoenix/index.php#ancreAProposDeMoi" aria-label="Aller à la section à propos de moi de la page accueil">À propos de moi</a></li>
+                        <li><a role="menuitem" href="/phoenix/index.php#ancreCv" aria-label="Aller à la section mon CV de la page accueil">Mon CV</a></li>
+                        <li><a role="menuitem" href="/phoenix/index.php#competences" aria-label="Aller à la section mes compétences de la page accueil">Mes compétences</a></li>
+                        <li id="meContacter"><a role="menuitem" href="/phoenix/index.php#formulaire" aria-label="Aller à la section me contacter de la page accueil">Me contacter</a></li>
+                    </ul>
+                </li>
+                <li><a role="menuitem" href="/phoenix/projets.php" aria-label="Aller sur la page projets">Projets</a></li>
+                <li><a role="menuitem" href="/phoenix/livre-or.php" aria-label="Aller sur la page livre d'or">Livre d'or</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
     <h1>Les Sex’plorateurs</h1>
     
 
@@ -50,11 +73,11 @@
 
     <main>
         <!-- carousel -->
-        <div class="carousel">
+        <div class="carousel" >
         <button class="carousel__button carousel__button--left is-hidden">
             <img src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png" alt="left" />
         </button>
-        <div class="carousel__track-container">
+        <div  class="carousel__track-container">
             <ul class="carousel__track">
             <li class="carousel__slide current-slide">
                 <img
@@ -148,7 +171,7 @@
         <div class="buttonChaine">
             <a href="https://www.youtube.com/@Sexplorateur" target="_blank">Voir la chaîne</a>        
         </div>
-        <iframe width="320" data-aos="zoom-in" src="https://www.youtube.com/embed/bLSHO-j4YvA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="videoYoutube" data-aos="zoom-in" src="https://www.youtube.com/embed/bLSHO-j4YvA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
 
     <section>
