@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     var swit = document.getElementById('lightSwitch');
     var container = document.getElementById('container');
     swit.onclick = function(){
+        console.log('hello');
         var color = container.style.backgroundColor;
         if(color === 'var(--colorButton2)'){
             container.style.backgroundColor = 'var(--backgroundColor)';
@@ -118,6 +119,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             container.style.backgroundColor = 'var(--colorButton2)';
         }
     };
+    // fin du buton switch de Nour 
 
 
 
