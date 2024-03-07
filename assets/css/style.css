@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: solid 1px red; */
 } 
 
 
@@ -196,6 +195,9 @@ li{
 
 /* fin du style du menu hamburger */
 
+#description{
+  margin-top: 50px;
+}
 .logo{
     width: 90%;
     margin: auto;
@@ -559,20 +561,10 @@ textarea:valid+label {
 
 /* css du carousel  */
 
-
-/* .carousel {
-  position: relative;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-  margin-top: 26px;
-} */
-
 .containeCarousel {
   width: 500px;
   height: 500px;
   display: flex;
-  /* flex-direction: column;
-  align-items: center; */
-  /*  box-shadow is from materialize css's website */
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
       0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
 }
@@ -619,87 +611,7 @@ button .arrow {
 #left-btn .arrow {
   transform: rotate(135deg);
 }
-/* .carousel {
-    position: relative;
-    height: 360px;
-    width: 239px;
-    margin: 0 auto;
-    margin-bottom: 5rem;
-  }
-  .carousel__images {
-    max-width: 500px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .carousel__track-container {
-    background: pink;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-  }
-  .carousel__track {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    height: 100%;
-    transition: transform 0.4s ease-in-out;
-  }
-  .carousel__slide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-  }
-  .carousel__button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all 0.2s ease-in;
-  }
-  .carousel__button:hover {
-    background-color: rgb(254, 215, 222);
-    border-radius: 20px;
-  }
-  
-  .carousel__button--left {
-    left: -40px;
-  }
-  .carousel__button--right {
-    right: -40px;
-     transform: translateY(-50%) rotate(180deg)
-  }
-  .carousel__button img {
-    width: 25px;
-  }
-  .carousel__nav {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    gap: 1rem;
-  }
-  .carousel__indicator {
-    border: 0;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background-color: rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-  }
-  
-  .carousel__indicator.current-slide {
-    background: rgba(0, 0, 0, 0.9);
-  }
-  .is-hidden {
-    display: none;
-  } */
-
-/* fin du css du carousel  */
+/* fin du carousel  */
 .videosShorts{
     display: flex;
     justify-content: space-evenly;
@@ -846,7 +758,6 @@ section{
         grid-template-columns: 1fr 1fr ;
     }
     main .containerCarousel{
-        margin-top: 64px;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
