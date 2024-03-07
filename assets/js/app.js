@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const imageSrc = 'assets/img/image-projet-youtube/';
     
     // Images are from unsplash
-    let pictures = [imageSrc+"imgRemake3.png",imageSrc+"imgProjet1.jpg", imageSrc+"img3.jpg" ];
+    let pictures = [imageSrc+"img3.jpg" ,imageSrc+"imgRemake3.png",imageSrc+"imgProjet1.jpg" ];
     
     img.src = pictures[0];
     let position = 0;
