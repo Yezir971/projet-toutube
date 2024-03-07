@@ -588,6 +588,7 @@ textarea:valid+label {
   width: 300px;
   height: 300px;
   z-index: -2;
+  border-radius: 30px;
 }
 
 button {
