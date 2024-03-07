@@ -66,29 +66,35 @@ main .cardCotainer {
 }
 
 
-p{
-    color: var(--colorTexte);
+p, .autrePage li{
+  color: var(--colorTexte);
 }
+.autrePage li{
+  list-style:circle;
+  margin-left: 30px;
+}
+
 h1{
-    visibility: hidden;
-    display: none;
+  visibility: hidden;
+  display: none;
 }
 h2{
-    text-align: center;
-    margin: 80px 0;
+  text-align: center;
+  margin: 80px 0;
+  color: var(--backgroundFrom);
 }
 
 
 /* Style du menu hamburger */
 
 .off{
-    display: none;
+  display: none;
 }
 li{
-    list-style: none;
+  list-style: none;
 }
 .navPrincipal{
-    width: 100%;
+  width: 100%;
 }
 .hide{
     display: flex;
@@ -139,8 +145,33 @@ li{
     margin-bottom: 20px;
 }
 #menu li a{
-    color: var(--colorButton1);
+    color: var(--backgroundFrom);
     font-family: "Holtwood One SC", serif;
+}
+#menu li a:hover{
+  color: var(--colorButton1);
+  transition: 0.5s;
+}
+/* animation des listes du menu  */
+#menu li a span {
+  position: relative;
+  display: inline-block; /* Assure que le span occupe juste l'espace nécessaire pour son contenu */
+}
+
+#menu li a span::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -1.5px; /* Ajustez cette valeur pour changer la distance de la ligne par rapport au texte */
+  left: 50%;
+  background-color: var(--backgroundFrom); /* Couleur de la ligne */
+  transition: width 0.5s ease, left 0.5s ease; /* Animation douce */
+}
+
+#menu li a:hover span::after, #menu li a:focus span::after {
+  width: 100%;
+  left: 0;
 }
 
 /*On donne une position finale aux 2 barres du menu hamburger */
@@ -177,18 +208,20 @@ li{
 
 
 footer{
-    text-align: center;
-    padding: 20px 0;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 40px;
 }
 footer div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
 }
 footer a{
-    color: var(--colorButton1);
+  color: var(--backgroundFrom);
+  text-decoration: underline;
+
 }
 
 .headerBann{
@@ -230,7 +263,6 @@ iframe{
   margin-top: 10px;
   -webkit-outline:solid 3px var(--colorButton1);
   outline: solid 3px var(--colorButton1) ;
-
 }
 .buttonChaine a:hover{
   -webkit-outline:solid 3px var(--colorButton1);
@@ -240,13 +272,18 @@ iframe{
   color: var(--colorButton1);
   transition: 0.5s;
 }
+
+#sectionNosVideos .buttonChaine{
+  margin-top: 40px;
+} 
+
 a{
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
 i{
-  color: var(--colorTexte);
+  color: var(--backgroundColor1);
 }
 .texteDescription{
   padding: 5%; 
@@ -670,7 +707,7 @@ section{
     align-items: center;
 }
 .line{
-    border: solid 1px black;
+    border: solid 1px var(--backgroundFrom);
     width: 22%;
 }
 .videoYoutube{
@@ -678,10 +715,12 @@ section{
 }
 
 .autrePage{
-    padding: 0 15% 10% 15%;
+  padding: 0 15% 10% 15%;
 }
-.autrePage p{
-    font-size: xx-small;
+.autrePage p {
+  font-size: xx-small;
+  margin: 30px 0;
+
 }
 .autrePage h1, .autrePage h2{
     font-size: x-small;
@@ -689,6 +728,16 @@ section{
 .autrePage a{
     color: var(--colorButton1);
 }
+@media screen and (min-width:425px){
+  #footerMentionPolitique{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+}
+
+
 
 @media screen and (min-width:1024px){
     .autrePage{
