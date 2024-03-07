@@ -15,10 +15,7 @@
     --backgroundFrom:#52539A;
 }
 
-h2{
-    font-family: "Holtwood One SC", serif;
 
-}
 
 html {
     --scroll-behavior: smooth;
@@ -82,10 +79,11 @@ h1{
   visibility: hidden;
   display: none;
 }
-h2{
+h2, h3{
   text-align: center;
   margin: 80px 0;
   color: var(--backgroundFrom);
+  font-family: "Holtwood One SC", serif;
 }
 
 
