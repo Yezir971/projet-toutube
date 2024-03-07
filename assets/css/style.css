@@ -224,19 +224,21 @@ iframe{
     width: 100%;
 }
 .buttonChaine a{
-    background: var(--colorButton1);
-    padding: 10px 30px ;
-    border-radius: 20px ;
-    margin-top: 10px;
-    outline: solid 2px var(--colorButton1) ;
+  background: var(--colorButton1);
+  padding: 10px 30px ;
+  border-radius: 20px ;
+  margin-top: 10px;
+  -webkit-outline:solid 3px var(--colorButton1);
+  outline: solid 3px var(--colorButton1) ;
 
 }
 .buttonChaine a:hover{
-    outline: solid 2px var(--colorButton1) ;
-    border-radius: 20px ;
-    background: var(--colorButton2);
-    color: var(--colorButton1);
-    transition: 0.8s;
+  -webkit-outline:solid 3px var(--colorButton1);
+  outline: solid 3px var(--colorButton1) ;
+  border-radius: 20px ;
+  background: var(--backgroundColor1);
+  color: var(--colorButton1);
+  transition: 0.5s;
 }
 a{
     color: white;
@@ -244,55 +246,55 @@ a{
     cursor: pointer;
 }
 i{
-    color: var(--colorTexte);
+  color: var(--colorTexte);
 }
 .texteDescription{
-    padding: 5%; 
+  padding: 5%; 
 }
 
 
 /* formulaire  */
 
 #contact {
-    background-color: var(--backgroundColor1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--backgroundColor1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contact-links h2{
-    margin: 0;
-    color: var(--backgroundColorCard);
+  margin: 0;
+  color: var(--backgroundColorCard);
 }
 .contact-box {
-    width: clamp(100px, 90%, 1000px);
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+  width: clamp(100px, 90%, 1000px);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contact-links, .contact-form-wrapper {
-    width: 50%;
-    padding: 8% 5% 10% 5%;
+  width: 50%;
+  padding: 8% 5% 10% 5%;
 }
 
 
 .contact-links {
-    background-color: #1f2e43;
-    background:
-        radial-gradient(
-        circle at 55% 92%, #426691 0 12%, transparent 12.2%
-        ), 
-        radial-gradient(
-        circle at 94% 72%, #426691 0 10%, transparent 10.2%
-        ), 
-        radial-gradient(
-        circle at 20% max(78%, 350px), #263a53 0 7%, transparent 7.2%
-        ), 
-        radial-gradient(
-        circle at 0% 0%, #263a53 0 40%, transparent 40.2%
-        ), 
-        #1f2e43;
-    border-radius: 10px 0 0 10px;
+  background-color: #1f2e43;
+  background:
+      radial-gradient(
+      circle at 55% 92%, #426691 0 12%, transparent 12.2%
+      ), 
+      radial-gradient(
+      circle at 94% 72%, #426691 0 10%, transparent 10.2%
+      ), 
+      radial-gradient(
+      circle at 20% max(78%, 350px), #263a53 0 7%, transparent 7.2%
+      ), 
+      radial-gradient(
+      circle at 0% 0%, #263a53 0 40%, transparent 40.2%
+      ), 
+      #1f2e43;
+  border-radius: 10px 0 0 10px;
 }
 
 .contact-form-wrapper {
@@ -620,7 +622,7 @@ textarea:valid+label {
     margin: auto;
 }
 .photo,.descriptions{
-    border-radius: 10%;
+    border-radius: 30px;
 }
 .descriptions{
     background: var(--backgroundColorCard);
