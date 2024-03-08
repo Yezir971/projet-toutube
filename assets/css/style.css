@@ -63,12 +63,16 @@ main .cardCotainer {
 }
 
 .navPrincipal{
-    position: relative;
+  position: relative;
 }
+
+
 
 
 p, .autrePage li{
   color: var(--colorTexte);
+  font-family: "Roboto", sans-serif;
+
 }
 .autrePage li{
   list-style:circle;
@@ -323,7 +327,11 @@ i{
   width: 50%;
   padding: 8% 5% 10% 5%;
 }
-
+textarea{
+  width: 368px;
+  height: 100px;
+  resize: none; 
+}
 
 .contact-links {
   background: url(../img/background/fond.png);
@@ -654,7 +662,7 @@ button .arrow {
     text-align: start;
 }
 .descriptions p{
-    margin: 0 20px;
+  margin: 0 20px;
 }
 
 .dark{

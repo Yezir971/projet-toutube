@@ -21,15 +21,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
         croix2.classList.toggle('angleBarre2');
     }
     for(let i=0; i<listeMenu.length ; i++){
-        listeMenu[i].addEventListener('click', ()=>{
-            menu.classList.toggle('hide');
-            croix1.classList.toggle('croix');
-            croix2.classList.toggle('croix');
-            croix1.classList.toggle('angleBarre1');
-            croix2.classList.toggle('angleBarre2');
-    
-    
-        })
+      listeMenu[i].addEventListener('click', ()=>{
+        menu.classList.toggle('hide');
+        croix1.classList.toggle('croix');
+        croix2.classList.toggle('croix');
+        croix1.classList.toggle('angleBarre1');
+        croix2.classList.toggle('angleBarre2');
+      })
     }
 
 
